@@ -17,7 +17,7 @@ export default function Hero() {
           playsInline
           poster={heroPoster}
         >
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src="./hero-bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-ink-900/55 via-ink-900/30 to-ink-900/80" />
       </div>
