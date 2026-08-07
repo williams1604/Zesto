@@ -1,0 +1,16 @@
+{
+  "short_name": "Zesto",
+  "name": "Zesto Supermarket — Fresh Groceries Delivered",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f97316",
+  "background_color": "#faf9f6",
+  "description": "Get more of life with Zesto. Fresh produce, premium in-house brands, and rewards on every order."
+}
