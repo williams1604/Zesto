@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --color-cream-50: #fbf7f1;
+  --color-cream-100: #f6efe3;
+  --color-cream-200: #ece0cc;
+  --color-cream-300: #ddc9a8;
+
+  --color-coral-400: #ff7a59;
+  --color-coral-500: #f2603c;
+  --color-coral-600: #d94a28;
+
+  --color-clay-700: #8a5a3c;
+  --color-clay-800: #6b4429;
+
+  --color-ink-50: #f6f5f3;
+  --color-ink-100: #e7e5df;
+  --color-ink-200: #d2cfc6;
+  --color-ink-300: #b0aca0;
+  --color-ink-400: #84807a;
+  --color-ink-500: #67665f;
+  --color-ink-600: #504f49;
+  --color-ink-700: #403f3b;
+  --color-ink-800: #2c2b28;
+  --color-ink-900: #1a1916;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-cream-50);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
