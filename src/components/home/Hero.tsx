@@ -5,6 +5,8 @@ const heroPoster =
 const appMockup =
   'https://images.pexels.com/photos/8939261/pexels-photo-8939261.jpeg?auto=compress&cs=tinysrgb&h=1000&w=600';
 
+const videoSrc = `${import.meta.env.BASE_URL}hero-bg.mp4`;
+
 export default function Hero() {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden bg-ink-900">
@@ -17,7 +19,7 @@ export default function Hero() {
           playsInline
           poster={heroPoster}
         >
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-ink-900/55 via-ink-900/30 to-ink-900/80" />
       </div>
